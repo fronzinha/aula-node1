@@ -49,7 +49,7 @@ const departamentosRoutes = (app) => {
         res.status(404).json({ message: 'Record not found' })
         return
       }
-
+      
       res.json({ message: 'Record was deleted' })
     } catch(e) {
       res.status(500).json({ message: 'Error on delete record', exception: e })
